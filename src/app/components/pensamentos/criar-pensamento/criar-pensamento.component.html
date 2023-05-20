@@ -4,16 +4,16 @@
   </header>
   <form>
     <label for="autoria">Pensamento</label>
-    <input type="textaera" [value]="pensamento.conteudo" class="input" name="pensamento" id="pensamento"
+    <input type="textaera" [(ngModel)]="pensamento.conteudo" class="input" name="pensamento" id="pensamento"
       placeholder="Digite o pensamento">
     <label for="autoria">Autoria</label>
-    <input type="textaera" [value]="pensamento.autoria" class="input" name="autoria" id="autoria"
+    <input type="textaera" [(ngModel)]="pensamento.autoria" class="input" name="autoria" id="autoria"
       placeholder="Digite a autoria ou fonte">
     <label for="modelo">Selecione o modelo do card:</label>
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
-          <input type="radio" value="modelo1" name="modelo-card" id="modelo1">
+          <input [(ngModel)]="pensamento.modelo" type="radio" value="modelo1" name="modelo-card" id="modelo1">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -28,11 +28,11 @@
       </div>
       <div class="radio-modelo">
         <label for="modelo2">
-          <input type="radio" value="modelo2" name="modelo-card" id="modelo2">
+          <input [(ngModel)]="pensamento.modelo" type="radio" value="modelo2" name="modelo-card" id="modelo2">
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 1</span>
+          <span>Modelo 2</span>
         </label>
         Prévia:
         <div class="modelo modelo2 ff-roboto-mono">
@@ -43,11 +43,11 @@
       </div>
       <div class="radio-modelo">
         <label for="modelo3">
-          <input type="radio" value="modelo3" name="modelo-card" id="modelo3">
+          <input [(ngModel)]="pensamento.modelo" type="radio" value="modelo3" name="modelo-card" id="modelo3">
           <div class="custom-radio">
             <span></span>
           </div>
-          <span>Modelo 1</span>
+          <span>Modelo 3</span>
         </label>
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
